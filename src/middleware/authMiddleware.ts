@@ -16,7 +16,7 @@ const protect = async (req, res, next) => {
 			};
 			token = generateToken(token);
 			const decoded = jwt.verify(token, process.env.JWT_SECRET);
-			
+
 			if (decoded) {
 				return next();
 			}
