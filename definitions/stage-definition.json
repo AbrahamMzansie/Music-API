@@ -1,0 +1,204 @@
+{
+	"ipcMode": null,
+	"executionRoleArn": null,
+	"containerDefinitions": [
+		{
+			"dnsSearchDomains": null,
+			"environmentFiles": null,
+			"logConfiguration": null,
+			"entryPoint": null,
+			"portMappings": [
+				{
+					"hostPort": 8081,
+					"protocol": "tcp",
+					"containerPort": 8081
+				}
+			],
+			"command": null,
+			"linuxParameters": null,
+			"cpu": 0,
+			"environment": [
+				{
+					"name": "DID_WW_URL",
+					"value": "https://api.didww.com/v3/"
+				},
+				{
+					"name": "DID_WW_API_KEY",
+					"value": "bwrprqhu1xvcgpsaggc34zrxwcqx81fb"
+				},
+				{
+					"name": "DID_WW_ORDER_QUANTITY",
+					"value": "1"
+				},
+				{
+					"name": "DID_WW_API_KEY_PRODUCTION",
+					"value": "bwrprqhu1xvcgpsaggc34zrxwcqx81fb"
+				},
+				{
+					"name": "MAIL_USER_NAME",
+					"value": "samuel.mothwa@yahoo.com"
+				},
+				{
+					"name": "MAIL_PASSWORD",
+					"value": "ppjwppiscyrwwmxb"
+				},
+				{
+					"name": "TOKEN_SECRET",
+					"value": "b0f43e62b64f43679fe4fcc1f751829b"
+				},
+				{
+					"name": "NODE_ENV",
+					"value": "production"
+				},
+				{
+					"name": "DB_HOST",
+					"value": "esim2godbstaging.cwbsxxrwiw4n.eu-central-1.rds.amazonaws.com"
+				},
+				{
+					"name": "DB_CONNECTION",
+					"value": "mysql"
+				},
+				{
+					"name": "DB_PORT",
+					"value": "3306"
+				},
+				{
+					"name": "DB_DATABASE",
+					"value": "yootok"
+				},
+				{
+					"name": "DB_DIALECT",
+					"value": "mariadb"
+				},
+				{
+					"name": "DB_USERNAME",
+					"value": "yootok-user-system-app"
+				},
+				{
+					"name": "DB_PASSWORD",
+					"value": "uy6!idoSDTyrrgopqx443uFSd89SDFdsfioeE^oi9"
+				},
+				{
+					"name": "INSTANCE_IP_ADDRESS",
+					"value": "18.198.166.85"
+				},
+				{
+					"name": "ASTERISK_USERNAME",
+					"value": "asterisk-ami"
+				},
+				{
+					"name": "ASTERISK_PASSWORD",
+					"value": "aSafe2UsePassword123"
+				},
+				{
+					"name": "DB_CONNECTION_V",
+					"value": "mysql"
+				},
+				{
+					"name": "DB_HOST_V",
+					"value": "18.198.166.85"
+				},
+				{
+					"name": "DB_PORT_V",
+					"value": "3306"
+				},
+				{
+					"name": "DB_DATABASE_V",
+					"value": "asterisk"
+				},
+				{
+					"name": "DB_DIALECT_V",
+					"value": "mysql"
+				},
+				{
+					"name": "DB_USERNAME_V",
+					"value": "asterisk"
+				},
+				{
+					"name": "DB_PASSWORD_V",
+					"value": "1mUyFkS-bJsdhuaq"
+				},
+				{
+					"name": "STRIPE_PUBLISHABLE_KEY",
+					"value": "pk_test_uigVDc1GPgjq9DYX0imQXUsH"
+				},
+				{
+					"name": "STRIPE_SECRETE_KEY",
+					"value": "sk_test_dowGUaMDyVUq6h8ZmXP1or5E"
+				},
+				{
+					"name": "PAYPAL_OAUTH_API",
+					"value": "https://api.sandbox.paypal.com/v1/oauth2/token/"
+				},
+				{
+					"name": "PAYPAL_ORDER_API",
+					"value": "https://api.sandbox.paypal.com/v2/checkout/orders/"
+				},
+				{
+					"name": "PAYPAL_CLIENT_ID",
+					"value": "."
+				},
+				{
+					"name": "PAYPAL_CLIENT_SECRET",
+					"value": "."
+				}
+			],
+			"resourceRequirements": null,
+			"ulimits": null,
+			"dnsServers": null,
+			"mountPoints": [],
+			"workingDirectory": null,
+			"secrets": null,
+			"dockerSecurityOptions": null,
+			"memory": 200,
+			"memoryReservation": null,
+			"volumesFrom": [],
+			"stopTimeout": null,
+			"image": "075755701420.dkr.ecr.eu-central-1.amazonaws.com/yootok-api:latest",
+			"startTimeout": null,
+			"firelensConfiguration": null,
+			"dependsOn": null,
+			"disableNetworking": null,
+			"interactive": null,
+			"healthCheck": null,
+			"essential": true,
+			"links": null,
+			"hostname": null,
+			"extraHosts": null,
+			"pseudoTerminal": null,
+			"user": null,
+			"readonlyRootFilesystem": null,
+			"dockerLabels": null,
+			"systemControls": null,
+			"privileged": null,
+			"name": "yootok-api-container"
+		}
+	],
+	"placementConstraints": [],
+	"memory": null,
+	"taskRoleArn": null,
+	"compatibilities": [
+		"EC2"
+	],
+	"taskDefinitionArn": "arn:aws:ecs:eu-central-1:075755701420:task-definition/yootok-api-task:51",
+	"family": "yootok-api-task",
+	"requiresAttributes": [
+		{
+			"targetId": null,
+			"targetType": null,
+			"value": null,
+			"name": "com.amazonaws.ecs.capability.ecr-auth"
+		}
+	],
+	"pidMode": null,
+	"requiresCompatibilities": [
+		"EC2"
+	],
+	"networkMode": null,
+	"cpu": null,
+	"revision": 51,
+	"status": "ACTIVE",
+	"inferenceAccelerators": null,
+	"proxyConfiguration": null,
+	"volumes": []
+}

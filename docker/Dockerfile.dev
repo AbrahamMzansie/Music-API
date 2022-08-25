@@ -1,0 +1,15 @@
+FROM node:14.15.4-alpine
+
+WORKDIR /app
+
+ENV PATH /app/node_modules/.bin:$PATH
+
+COPY package.json ./
+COPY yarn.lock ./
+
+RUN yarn install
+
+COPY . ./
+
+# start app
+CMD ["yarn", "dev"]
