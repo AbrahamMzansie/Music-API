@@ -12,6 +12,14 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
  For example in my machine l did this 
  #PS C:\PROJECTS\music-project\Music-API> yarn dev
  
+ # Create a .env file and populate with the following data.
+ NODE_ENV=development
+JWT_SECRET=abc123
+MONGO_URI=mongodb+srv://abraham:abraham01@mzansiesolutions.avp3w.mongodb.net/music
+PORT=3000
+HOST=http://localhost:3000
+
+ 
  # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
  # Testing endpoints with PostMan
