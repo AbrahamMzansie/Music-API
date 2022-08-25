@@ -109,8 +109,6 @@ Authorization type : Bearer Token <br />
     } <br />
 } <br />
 
-# #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
-
 
 # (b) GET ALL PLAYLIST ENDPOINT 
  using the following end point <br />
@@ -123,9 +121,6 @@ Authorization type : Bearer Token <br />
  URL : http://localhost:3000/api/playList/get-playList/630757949597457ccb00db9b <br />
  method : GET <br />
 Authorization type : Bearer Token <br />  
-
-
-# #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
 # (b) DELETE SINGLE PLAYLIST ENDPOINT 
