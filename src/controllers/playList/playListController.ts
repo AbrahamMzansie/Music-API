@@ -114,7 +114,6 @@ const addTrackToPlayList = async (req: Request, res: Response) => {
 	}
 };
 
-
 const updatePlayList = async (req: Request, res: Response) => {
 	try {
 		const playList = await PlayList.findById(req.params.id);
@@ -140,7 +139,6 @@ const updatePlayList = async (req: Request, res: Response) => {
 	}
 };
 
-
 const deletePlayList = async (req: Request, res: Response) => {
 	try {
 		const playList = await PlayList.findById(req.params.id);
@@ -164,7 +162,6 @@ const deletePlayList = async (req: Request, res: Response) => {
 		});
 	}
 };
-
 
 const getAllPlayList = async (req: Request, res: Response) => {
 	try {

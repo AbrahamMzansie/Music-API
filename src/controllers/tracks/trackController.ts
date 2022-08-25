@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import Logger from '../../utils/console';
 import Track from '../../models/track';
 
-
 const createTrack = async (req: Request, res: Response) => {
 	try {
 		const { name, album, artist, duration, artwork, audio } = req.body;
@@ -35,7 +34,6 @@ const createTrack = async (req: Request, res: Response) => {
 	}
 };
 
-
 const updateTrack = async (req: Request, res: Response) => {
 	try {
 		const track = await Track.findById(req.params.id);
@@ -61,7 +59,6 @@ const updateTrack = async (req: Request, res: Response) => {
 	}
 };
 
-
 const deleteTrack = async (req: Request, res: Response) => {
 	try {
 		const track = await Track.findById(req.params.id);
@@ -86,7 +83,6 @@ const deleteTrack = async (req: Request, res: Response) => {
 		});
 	}
 };
-
 
 const getAllTracks = async (req: Request, res: Response) => {
 	try {
