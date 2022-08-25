@@ -22,6 +22,7 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
  using the following end point <br />
  URL : http://localhost:3000/api/track/create-track <br />
  method : POST <br />
+ Authorization type : Bearer Token <br />
  body data :  { <br />
     "name" : "Basiboy",, <br />
     "album" : "Basiboy", <br />
@@ -31,106 +32,107 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
     "audio": "url link" ,<br />
 } <br /> 
  
- # (b) Login to get unique API Key 
+ # (b) UPDATE TRACK ENDPOINT 
  using the following end point <br />
- URL : http://localhost:3000/api/auth/login <br />
- method : POST <br />
+ URL : http://localhost:3000/api/track/update-track/63072d6768b0dfcc4a1d0fbc <br />
+ method : PUT <br />
+Authorization type : Bearer Token <br /> 
  body data :  { <br />
-    "email" : "admin.admin@gmail.com", <br />
-    "password" : "12345678" <br />
+    "name" : "Basiboy1",, <br />
+    "album" : "Basiboy1", <br />
+    "artist" : "Themba Mathe1", <br />
+    "duration" : "10mins1",<br />
+    "artwork" : "Rhumba1", <br />
+    "audio": "url link1" ,<br />
 } <br />
 
-# (c) WHERE TO GET UNIQUE API Key 
-Send your rest api to the server to get your unique API Key to use it in cart endpoint .
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(96).png)
+# (b) GET ALL TRACK ENDPOINT 
+ using the following end point <br />
+ URL : http://localhost:3000/api/track/get-all-tracks <br />
+ method : GET <br />
+Authorization type : Bearer Token <br />  
+
+
+# (b) GET SINGLE TRACK ENDPOINT 
+ using the following end point <br />
+ URL : http://localhost:3000/api/track/get-track/63072d6768b0dfcc4a1d0fbc <br />
+ method : GET <br />
+Authorization type : Bearer Token <br />  
  
+ 
+ # (b) DELETE SINGLE TRACK ENDPOINT 
+ using the following end point <br />
+ URL : http://localhost:3000/api/track/delete-track/63073d5f26d02305c88bc97d <br />
+ method : DELETE <br />
+Authorization type : Bearer Token <br />  
  
  # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
- # TESTING CART END POINT
+ # TESTING PLAYLIST END POINT
  
- # (1) how to create a cart 
+ # (1) how to create a playlist 
  using the following end point <br />
- URL : http://localhost:3000/api/cart/create-cart <br />
- Authorization type : API KEY <br />
+ URL : http://localhost:3000/api/playList/create-playList <br />
+ Authorization type : Bearer Token <br />  
  method : POST <br />
  body data :  { <br />
-    "cartItems" : { <br />
-           "product" : "6154724cd721e64a14361c4b", <br />
-           "quantity" : "1" <br />
-    }<br />
-    
-}<br />
-
-# Image below show you how to create cart 
-
-First you need to attach your unique API Key obtained when login in 
-Do the following to add your API Key to your create cart end point(without unique API Key you cannot create cart)
-# Choose "API Key" as your  Authorization Type and add your API Key as shown below
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(90).png)
-
-
+   "name" : "All Mokis Connection Songs", <br />
+    "creator," : "Abraham Nkomo", <br />
+    "playtime" : "300hours"	 <br />
+    } <br />
 # #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
  
- # (1) HOW TO GET CART
+ # (1) HOW TO  ADD TRACK TO LIST
  using the following end point <br />
- URL : http://localhost:3000/api/cart/get-cart <br />
- method :GET <br />
- Authorization type : API Key <br />
+ URL : http://localhost:3000/api/playList/add-track-to-playlist <br />
+ method :POST <br />
+ Authorization type : Bearer Token <br />  
+ body data :  { <br />
+   "id" : "630757949597457ccb00db9b", <br />
+    "trackList" :{<br />
+        "track" : "63074d6541264c99ee153675"}	 <br />    
+                 } <br />
+    } <br />
+# #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
-# Image below show you how to get cart 
-
-First you need to attach your key obtained when login in 
-Do the following to add your API Key to your get cart end point(without key you cannot get your cart)
-# Choose "API Key" as your  Authorization Type and add your key as shown below
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(91).png)
+# (b) UPDATE PLAYLIST ENDPOINT 
+ using the following end point <br />
+ URL : http://localhost:3000/api/track/update-track/63072d6768b0dfcc4a1d0fbc <br />
+ method : PUT <br />
+Authorization type : Bearer Token <br /> 
+ body data :  { <br />
+    "name" : "All Mokis Connection Songs", <br />
+    "creator," : "Abraham Nkomo", <br />
+    "playtime" : "300hours"	 <br />
+    } <br />
+} <br />
 
 # #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
-# (1) HOW TO UPDATE CART
+# (b) GET ALL PLAYLIST ENDPOINT 
  using the following end point <br />
- URL : http://localhost:3000/api/cart/update-cart <br />
- method :PUT <br />
- Authorization type : API Key <br />
+ URL : http://localhost:3000/api/playList/get-all-playList <br />
+ method : GET <br />
+Authorization type : Bearer Token <br />  
 
-# Image below show you how to update cart 
+# (b) GET A SINGLE PLAYLIST ENDPOINT 
+ using the following end point <br />
+ URL : http://localhost:3000/api/playList/get-playList/630757949597457ccb00db9b <br />
+ method : GET <br />
+Authorization type : Bearer Token <br />  
 
-First you need to attach your key obtained when login in 
-Do the following to add your API Key to your update cart end point(without key you cannot update your cart)
-# Choose "API Key" as your  Authorization Type and add your key as shown below
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(92).png)
 
 # #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
-# (1) HOW TO DELETE CART
+# (b) DELETE SINGLE PLAYLIST ENDPOINT 
  using the following end point <br />
- parameter : <enter cart id like below URL> for example URL = (http://localhost:3000/api/cart/delete-cart/) , parameter = 6154c477c437a05124670c80 <br />
-  URL : http://localhost:3000/api/cart/delete-cart/6154c477c437a05124670c80 <br />
-  Authorization type : API Key <br />
- method :DELETE <br />
-  
-# Image below show you how to delete cart
-
-First you need to attach your key obtained when login in 
-Do the following to add your key to your delete cart end point(without API key you cannot delete your cart)
-# Choose "Bearer token" as your  Authorization Type and add your token as shown below
-  
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
-
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(93).png)
+ URL : http://localhost:3000/api/playList/delete-playList/630757629597457ccb00db99 <br />
+ method : DELETE <br />
+Authorization type : Bearer Token <br />  
   
   # --------------------------------------------------------------------------------------------------------------------------------------------------------#
 
