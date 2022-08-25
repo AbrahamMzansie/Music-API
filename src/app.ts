@@ -11,8 +11,6 @@ import middlewareLogger from './middleware/logger.middleware';
 
 dotenv.config({ path: `${path.join(__dirname, '..')}/.env` });
 
-import requestSourceMonitor from './middleware/request-source.middleware';
-
 import routes from './routes/routes';
 
 const app = express();
@@ -42,8 +40,6 @@ app.use(helmet());
 
 // Logger
 app.use(middlewareLogger);
-
-app.use(requestSourceMonitor);
 
 // Initialize routes
 
