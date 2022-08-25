@@ -114,10 +114,7 @@ const addTrackToPlayList = async (req: Request, res: Response) => {
 	}
 };
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const updatePlayList = async (req: Request, res: Response) => {
 	try {
 		const playList = await PlayList.findById(req.params.id);
@@ -143,10 +140,7 @@ const updatePlayList = async (req: Request, res: Response) => {
 	}
 };
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const deletePlayList = async (req: Request, res: Response) => {
 	try {
 		const playList = await PlayList.findById(req.params.id);
@@ -171,10 +165,7 @@ const deletePlayList = async (req: Request, res: Response) => {
 	}
 };
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const getAllPlayList = async (req: Request, res: Response) => {
 	try {
 		const playList = await PlayList.find({});

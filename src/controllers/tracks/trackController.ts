@@ -2,10 +2,7 @@ import { Request, Response } from 'express';
 import Logger from '../../utils/console';
 import Track from '../../models/track';
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const createTrack = async (req: Request, res: Response) => {
 	try {
 		const { name, album, artist, duration, artwork, audio } = req.body;
@@ -38,10 +35,7 @@ const createTrack = async (req: Request, res: Response) => {
 	}
 };
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const updateTrack = async (req: Request, res: Response) => {
 	try {
 		const track = await Track.findById(req.params.id);
@@ -67,10 +61,7 @@ const updateTrack = async (req: Request, res: Response) => {
 	}
 };
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const deleteTrack = async (req: Request, res: Response) => {
 	try {
 		const track = await Track.findById(req.params.id);
@@ -96,10 +87,7 @@ const deleteTrack = async (req: Request, res: Response) => {
 	}
 };
 
-/**
- * Get all cancelled subscription that have current_period_end 
-  equal OR less than today's date
-*/
+
 const getAllTracks = async (req: Request, res: Response) => {
 	try {
 		const tracks = await Track.find({});
