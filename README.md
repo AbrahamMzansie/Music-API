@@ -1,35 +1,35 @@
-# API Authentication and verification when getting data
+# Create a simple Music API to handle operations on Tracks and Playlists.
 
 # How to run this project
 # (a)-Install Dependencies
 Naviagate to the folder shopping-cart-backend and do the following . Image below show the same technique to install dependencies . Run the following command
-#npm install
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/install%20dependences.png)
+#yarn install
+
 
 # (b) Run the project 
- Go to shopping-cart-backend/backend and issue the following command
- # node server
+ Go to MUSIC API and issue the following command
+ # yarn dev
  For example in my machine l did this 
- #PS C:\PROJECTS\shopping-cart-backend\backend> node server
+ #PS C:\PROJECTS\music-project\Music-API> yarn dev
  
  # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
  # Testing endpoints with PostMan
- First of all you need to register in order to get unique API Key
  
- # (a)How to register
+ 
+ # (a)CREATE TRACK ENDPOINT
  
  using the following end point <br />
- URL : http://localhost:3000/api/auth/register <br />
+ URL : http://localhost:3000/api/track/create-track <br />
  method : POST <br />
  body data :  { <br />
-    "name" : "system", <br />
-    "email" : "admin.admin@gmail.com", <br />
-    "password" : "12345678", <br />
-    "isAdmin" : "false" <br />
-} <br />
- 
- ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/register.png)
+    "name" : "Basiboy",, <br />
+    "album" : "Basiboy", <br />
+    "artist" : "Themba Mathe", <br />
+    "duration" : "10mins",<br />
+    "artwork" : "Rhumba", <br />
+    "audio": "url link" ,<br />
+} <br /> 
  
  # (b) Login to get unique API Key 
  using the following end point <br />
