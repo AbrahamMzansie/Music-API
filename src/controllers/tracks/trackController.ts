@@ -109,7 +109,6 @@ const getAllTracks = async (req: Request, res: Response) => {
 
 const getTrack = async (req: Request, res: Response) => {
 	try {
-		Logger.info(req.params.id);
 		const track = await Track.findOne({ _id: req.params.id });
 
 		if (track) {
