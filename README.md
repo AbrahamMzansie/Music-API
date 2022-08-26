@@ -140,7 +140,12 @@ Authorization type : Bearer Token <br />
   # --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
+#  How To Run Test
+ l added One Test , The test check for health status of the application <br />
+# To  run please do the following yarn test
+ br />
+Authorization type : Bearer Token <br />  
+  
 
  
  
