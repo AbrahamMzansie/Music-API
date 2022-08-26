@@ -42,7 +42,7 @@ const updateTrack = async (req: Request, res: Response) => {
 			await track.updateOne({ $set: req.body });
 			return res.status(200).json({
 				success: true,
-				error: `Post updated successfully`,
+				message: `Post updated successfully`,
 			});
 		}
 		return res.status(400).json({
@@ -67,7 +67,7 @@ const deleteTrack = async (req: Request, res: Response) => {
 			await track.deleteOne();
 			return res.status(200).json({
 				success: true,
-				error: `Track deleted successfully`,
+				message: `Track deleted successfully`,
 			});
 		}
 		return res.status(400).json({

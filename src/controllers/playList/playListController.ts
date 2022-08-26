@@ -45,15 +45,15 @@ const addTrackToPlayList = async (req: Request, res: Response) => {
 		});
 
 		if (!playList) {
-			return res.status(400).json({
+			return res.status(401).json({
 				success: false,
-				message: 'PlayList not found',
+				error: 'PlayList not found',
 			});
 		}
 		if (trackList && trackList.length === 0) {
 			return res.status(400).json({
 				success: false,
-				message: 'Add at least one track item',
+				error: 'Add at least one track item',
 			});
 		}
 		if (playList) {
@@ -101,7 +101,7 @@ const addTrackToPlayList = async (req: Request, res: Response) => {
 		}
 
 		return res.status(400).json({
-			success: true,
+			success: false,
 			message: 'Failed to add track to playList',
 		});
 	} catch (error) {
