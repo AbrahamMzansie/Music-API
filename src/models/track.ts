@@ -12,19 +12,19 @@ const trackSchema = new mongoose.Schema(
 		},
 		artist: {
 			type: String,
-			required: true,
+			required: false,
 		},
 		duration: {
 			type: String,
-			required: true,
+			required: false,
 		},
 		artwork: {
 			type: String,
-			required: true,
+			required: false,
 		},
 		audio: {
 			type: String,
-			required: true,
+			required: false,
 		},
 	},
 	{
