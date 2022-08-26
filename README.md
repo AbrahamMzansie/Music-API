@@ -2,8 +2,8 @@
 
 # How to run this project
 # (a)-Install Dependencies
-Naviagate to the folder shopping-cart-backend and do the following . Image below show the same technique to install dependencies . Run the following command
-#yarn install
+Naviagate to the folder Musi API and do the following . Image below show the same technique to install dependencies . Run the following command
+#yarn install or yarn
 
 
 # (b) Run the project 
