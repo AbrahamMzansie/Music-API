@@ -141,8 +141,8 @@ Authorization type : Bearer Token <br />
 
 
 #  How To Run Test
- l added One Test , The test check for health status of the application <br />
-# To  run please do the following yarn test
+ l added three Tests , The test check for health status of the application and it also get all track and playlist from database <br />
+# To  run please do the following # yarn test
  
  
  
